@@ -1,11 +1,11 @@
-import { View, Text, Touchable, Image } from 'react-native'
+import { View, Text, Touchable, Image , SafeAreaView } from 'react-native'
 import React from 'react'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 const Home = ({ navigation }) => {
     return (
-        <View style={{ width: '100%', height: '100%', flexDirection: 'column' , backgroundColor:'#FFF8EA'}}>
+        <SafeAreaView style={{ width: '100%', height: '100%', flexDirection: 'column' , backgroundColor:'#FFF8EA'}}>
             <Navbar navigation={navigation} />
             <View style={{ width: '100%', height: '75%', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', position: 'relative' }}>
                 <Image source={require('../../assets/images/bg-image.png')} style={{ width: '100%', height: '100%', position: 'absolute' }} resizeMode='cover' />
@@ -26,7 +26,7 @@ const Home = ({ navigation }) => {
                 </View>
             </View>
             <Footer navigation={navigation} />
-        </View>
+        </SafeAreaView>
 
     )
 }

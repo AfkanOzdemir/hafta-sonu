@@ -18,9 +18,10 @@ const SwiperPage = ({ navigation }) => {
                         keyExtractor={(item, index) => item.id}
                         horizontal={true}
                         style={{ width: '100%', height: '100%' }}
-                        renderItem={({ item, index }) => {
+                        renderItem={({ item, index }) => { 
+                            console.warn(item)
                             switch (item.itemType) {
-                                case 0: return (<SwiperType1 item={item} index={index} />)
+                                case 0: return (<SwiperType1 item={item} key={index.toString()} />)
                             }
                         }}
                     />
