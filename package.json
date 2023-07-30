@@ -27,7 +27,8 @@
     "react-native-screens": "~3.20.0",
     "react-native-swiper": "^1.6.0",
     "react-native-swiper-flatlist": "^3.2.3",
-    "react-native-web": "~0.18.7"
+    "react-native-web": "~0.18.7",
+    "expo-linear-gradient": "~12.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",

@@ -1,6 +1,6 @@
 import React from 'react'
-import Home from './pages/Home'
-import SwiperPage from './pages/SwiperPage'
+import Home from './screens/Home'
+import SwiperPage from './screens/SwiperPage'
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
